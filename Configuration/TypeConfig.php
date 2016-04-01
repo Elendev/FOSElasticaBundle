@@ -54,9 +54,9 @@ class TypeConfig
     /**
      * @return string|null
      */
-    public function getIndexAnalyzer()
+    public function getAnalyzer()
     {
-        return $this->getConfig('index_analyzer');
+        return $this->getConfig('analyzer');
     }
 
     /**
@@ -91,14 +91,6 @@ class TypeConfig
     public function getName()
     {
         return $this->name;
-    }
-
-    /**
-     * @return string|null
-     */
-    public function getSearchAnalyzer()
-    {
-        return $this->getConfig('search_analyzer');
     }
 
     /**
